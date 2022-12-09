@@ -1,5 +1,5 @@
 {% set name = "local-attention" %}
-{% set version = "1.4.4" %}
+{% set version = "1.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/local-attention-{{ version }}.tar.gz
-  sha256: e6d27a0af622caf3b05cc1d644f16c3f65b0893d299e3100d0785b528985317c
+  sha256: b155bccd92c9345b598a109e31b5e8d0aec0146c8978dc95c48ddfcf9f5d5c9f
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - einops >=0.6.0
     - pytorch
 
 test:
