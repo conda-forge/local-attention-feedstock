@@ -1,11 +1,11 @@
-About local-attention
-=====================
+About local-attention-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/local-attention-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lucidrains/local-attention
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/local-attention-feedstock/blob/main/LICENSE.txt)
 
 Summary: Local windowed attention, for language modeling
 
