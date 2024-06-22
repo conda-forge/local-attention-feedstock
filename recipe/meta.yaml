@@ -1,23 +1,25 @@
 {% set name = "local-attention" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/local-attention-{{ version }}.tar.gz
-  sha256: a7b179dc922358b4bb48b3172cfb349edb459d1bdce589d83786a57a5e3690a6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 77e4385f37ccf14229f38344cbdb66cca90a97eef0cdddde656e4e575bc16168
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
+    - pytest-runner
   run:
     - python >=3.6
     - einops >=0.6.0
@@ -33,7 +35,7 @@ test:
 
 about:
   home: https://github.com/lucidrains/local-attention
-  summary: Local windowed attention, for language modeling
+  summary: Local attention, window with lookback, for language modeling
   license: MIT
   license_file:
     - LICENSE
