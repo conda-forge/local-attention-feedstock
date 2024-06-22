@@ -19,6 +19,7 @@ requirements:
     - python >=3.6
     - pip
     - setuptools
+    - pytest-runner
   run:
     - python >=3.6
     - einops >=0.6.0
