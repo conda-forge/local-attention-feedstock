@@ -22,7 +22,7 @@ requirements:
     - pytest-runner
   run:
     - python >=3.6
-    - einops >=0.6.0
+    - einops >=0.8.0
     - pytorch
 
 test:
