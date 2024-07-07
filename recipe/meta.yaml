@@ -1,5 +1,5 @@
 {% set name = "local-attention" %}
-{% set version = "1.9.3" %}
+{% set version = "1.9.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 77e4385f37ccf14229f38344cbdb66cca90a97eef0cdddde656e4e575bc16168
+  sha256: 8e948fc6a04181fb49742e9956bf2efdf7caa7ae6abeaa32136aaa3c4fa712d5
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pytest-runner
   run:
     - python >=3.6
-    - einops >=0.6.0
+    - einops >=0.8.0
     - pytorch
 
 test:
