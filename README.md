@@ -7,7 +7,7 @@ Home: https://github.com/lucidrains/local-attention
 
 Package license: MIT
 
-Summary: Local windowed attention, for language modeling
+Summary: Local attention, window with lookback, for language modeling
 
 Current build status
 ====================
