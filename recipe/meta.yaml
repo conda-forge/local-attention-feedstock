@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - einops >=0.8.0
+    - hyper-connections >=0.1.8
     - pytorch
 
 test:
