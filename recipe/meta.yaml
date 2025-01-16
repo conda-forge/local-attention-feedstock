@@ -1,5 +1,5 @@
 {% set name = "local-attention" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d3841394e47781665b7d4ab9b6b9e3abb0c715e53b9644ecd8614f728652b929
+  sha256: bf24453d1ea251ed075a3a4c734e5b608e49e9c489f9b867da5b955038d2c063
 
 build:
   noarch: python
